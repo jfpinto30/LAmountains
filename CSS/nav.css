@@ -1,0 +1,42 @@
+nav {
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%; 
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    border: 5px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width:50%;
+    padding: 5px;
+}
+
+nav li {
+    border: 2px solid blue;
+    font-family: "Lato",sans-serif;
+    list-style: none;
+    margin-left:10px;
+    
+}
+nav a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+}

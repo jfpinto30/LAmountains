@@ -2,13 +2,13 @@
 @media all and (min-width:310px) and (max-width:780px) {}
 
 
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300;400&display=swap');
 
 /*
-font-family: 'Lato', sans-serif;
-font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
 */
+h1, h2, h3, p, span, a{
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 /* BODY */

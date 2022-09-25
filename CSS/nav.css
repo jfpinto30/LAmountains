@@ -9,6 +9,7 @@ nav {
     left: 0px;
     margin: 0px;
     padding: 0px;
+    position: absolute;
     
 
 }
@@ -16,10 +17,14 @@ nav {
 nav img {
     width: 40px;
     height: 40px;
+    transition: all .2s ease-in-out; 
+
+}
+nav img:hover{
+    transform: scale(1.2); 
 }
 
 nav ul {
-    border: 5px solid pink;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -29,14 +34,19 @@ nav ul {
 }
 
 nav li {
-    border: 2px solid blue;
-    font-family: "Lato",sans-serif;
     list-style: none;
-    margin-left:10px;
-    
+    margin-left:30px;
+    padding-left: 20px;  
+    transition: all .2s ease-in-out; 
+  
 }
 nav a {
     color: #ffffff;
     font-size: 12px;
     text-decoration: underline;
+    font-weight:bolder;
+
+}
+.nav li:hover {
+    transform: scale(1.2); 
 }

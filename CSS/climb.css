@@ -1,3 +1,42 @@
+@media all and (min-width:680px) and (max-width:980px) {
+    section.section-climb {
+        max-height: 250px;
+        padding-top: 40%;
+    }
+    div.title-climb {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top:1% ;
+        padding: 10px;
+    }
+    div.title-climb .two {
+        font-size: 65px;
+    }
+    div.title-climb .climb {
+        font-size: 35px;
+    }
+    div.title-climb p {
+        font-size: 10px;
+        padding: 25px;
+        
+    }
+    div.text {
+        max-width: 50%;
+        max-height: 200px;
+        
+    }
+    div.text h2 {
+        font-size: 25px;
+        margin-top:5%;
+        padding: 0%;   
+    }
+    div.text ul  {
+        font-size: 10px;
+        margin: 0%;
+    }
+}
 @media all and (min-width:550px) and (max-width:680px) {
     section.section-climb {
         max-height: 450px;
@@ -21,6 +60,7 @@
         padding: 15px;
         
     }
+    
 }
 @media all and (min-width:310px) and (max-width:550px) {
     section.section-climb {

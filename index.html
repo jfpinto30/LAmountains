@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="./CSS/header.css"/>
     <link rel="stylesheet" href="./CSS/01history.css"/>
     <link rel="stylesheet" href="./CSS/climb.css"/>
+    <link rel="stylesheet" href="./CSS/footer.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 </head>
 <body>
     <nav class="nav">
@@ -117,27 +121,69 @@
 
 
    <!-- Slider -->
-   <div class="slider mySlider">
-    <div class="slider-wrapper">
-      <div class="slider-slide">
-        <img src="./img/Mountain.jpg" alt="mountain"/>
-      </div>
-      <div class="slider-slide">
-        <img src="./img/Mountain2.jpg" alt="mountain2"/>
-      </div>
-      
+   
+
+
+   <div class="slideshow-container">
+
+    <div class="img-bar">
+        <a class="prev" onclick="plusSlides(-1)">Mountain</a>
+        <a class="next" onclick="plusSlides(1)">Mountain 2</a>
     </div>
-    <div class="slider-button-next"></div>
-    <div class="slider-button-prev"></div>
-    <div class="slider-pagination"></div>
-  </div>
+
+    <div class="mySlides fade">
+      <img src="./img/Mountain.jpg" style="width:100%">
+      <div class="text">
+        <h2>SCHEDULE</h2>
+           <ul>
+            <li>25 Nov 2016		Vestibulum viverra</li>
+            <li>28 Nov 2016		Vestibulum viverra</li>
+            <li>18 Dec 2016		Vestibulum viverra</li>
+            <li>7 Jan 2017		Vestibulum viverra</li>
+           </ul>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="./img/Mountain2.jpg" style="width:100%">
+    </div>
+    
+    
+    </div>
+    <br>
+
 
 
 
 </section>
 
+<footer>
+    
+        <div class="footer-img">
+            <img src="./img/Logo.svg" alt="Logo"/>
+            <div class="footerLogo-text">
+            <span>LOSANGELES</span>
+            <span>MOUNTAINS</span>
+            </div>
+          
+           <p> COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+            
+        </div>
+    
+</footer>
+
+
+
+
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./slider.js"></script>
+
 <!-- INITIALIZE SWIPER -->
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -168,22 +214,37 @@
     });
   </script>
 
-<!-- SLIDER -->
+
+
+<!-- SLIDESHOW -->
 <script>
-    var slider = new Slider(".mySlider", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".slider-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".slider-button-next",
-        prevEl: ".slider-button-prev",
-      },
-    });
-  </script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
 
 

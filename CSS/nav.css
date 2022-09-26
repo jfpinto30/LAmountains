@@ -1,13 +1,18 @@
+@media all and (min-width:550px) and (max-width:680px) {
+  
+}
+@media all and (min-width:310px) and (max-width:550px) {
+  
+}
+
 nav {
+    border: 5px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100%; 
-    top: 0px;
-    left: 0px;
-    margin: 0px;
-    padding: 0px;
+    height: auto;
     position: absolute;
 }
 
@@ -59,6 +64,7 @@ nav a {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    position: sticky;
     width: 100%; 
     top: 0px;
     left: 0px;

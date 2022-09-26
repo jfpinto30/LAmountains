@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/nav.css"/>
     <link rel="stylesheet" href="./CSS/header.css"/>
     <link rel="stylesheet" href="./CSS/01history.css"/>
+    <link rel="stylesheet" href="./CSS/climb.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,18 +100,44 @@
 
     </div>
 
- 
-
-
-
-
-
 
 </section> 
 
+
+<section class="section-climb">
+    <div class="title-climb">
+        <span class="two">02.</span>
+        <span class="climb">CLIMB</span>
+        <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, 
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit 
+            dignissim tortor nec congue. </p>
+    
+    </div>
+
+
+
+   <!-- Slider -->
+   <div class="slider mySlider">
+    <div class="slider-wrapper">
+      <div class="slider-slide">
+        <img src="./img/Mountain.jpg" alt="mountain"/>
+      </div>
+      <div class="slider-slide">
+        <img src="./img/Mountain2.jpg" alt="mountain2"/>
+      </div>
+      
+    </div>
+    <div class="slider-button-next"></div>
+    <div class="slider-button-prev"></div>
+    <div class="slider-pagination"></div>
+  </div>
+
+
+
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
+<script src="./slider.js"></script>
 <!-- INITIALIZE SWIPER -->
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -140,6 +167,25 @@
       },
     });
   </script>
+
+<!-- SLIDER -->
+<script>
+    var slider = new Slider(".mySlider", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".slider-button-next",
+        prevEl: ".slider-button-prev",
+      },
+    });
+  </script>
+
+
 
 
 </body>

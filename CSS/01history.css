@@ -136,10 +136,9 @@
 }
 
 .section-history img {
+    background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
-    
-   
 }
 
 .history-content {
@@ -185,7 +184,7 @@
 
 }
 .swiper {
-    width: 550px;
+    width: 600px;
     height: 150px;
   }
 
@@ -195,12 +194,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding:5px;
   }
 
   .swiper-slide img {
     display: block;
-    width:200px
+    width:200px;
   }
 
   

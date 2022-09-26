@@ -1,0 +1,131 @@
+@media all and (min-width:550px) and (max-width:680px) {
+    section.section-climb {
+        max-height: 450px;
+        padding-top: 50%;
+    }
+    div.title-climb {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top:2% ;
+    }
+    div.title-climb .two {
+        font-size: 45px;
+    }
+    div.title-climb .climb {
+        font-size: 15px;
+    }
+    div.title-climb p {
+        font-size: 10px;
+        padding: 15px;
+        
+    }
+}
+@media all and (min-width:310px) and (max-width:550px) {
+    section.section-climb {
+        max-height: 450px;
+        padding-top: 80%;
+    }
+    div.title-climb {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top:2% ;
+    }
+    div.title-climb .two {
+        font-size: 45px;
+    }
+    div.title-climb .climb {
+        font-size: 15px;
+    }
+    div.title-climb p {
+        font-size: 10px;
+        padding: 15px;
+        
+    }
+}
+.section-climb {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+}
+.section-climb img {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.title-climb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+    height: 200px;
+}
+
+.title-climb span {
+    font-family: 'Lato',sans-serif;
+    vertical-align: middle;
+}
+.two{
+    color:rgba(65, 79, 107, 0.364);
+    font-size: 6rem;
+}
+.climb {
+    color:rgb(53, 74, 105);
+    font-size: 3rem;
+    font-weight: 500;
+}
+.title-climb p {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+
+/* SLIDER */
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .slider-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+

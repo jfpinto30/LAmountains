@@ -1,3 +1,16 @@
+@media all and (min-width:680px) and (max-width:880px) {
+    div.banner{
+        max-height: 450px;
+    }
+    div.title  {
+        top:35%;
+    }
+    div.title h1{
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+}
+
 @media all and (min-width:550px) and (max-width:680px) {
     div.banner{
         max-height: 350px;
@@ -13,10 +26,10 @@
 }
 @media all and (min-width:310px) and (max-width:550px){
     div.banner{
-        max-height: 250px;
+        max-height: 255px;
     }
     div.title  {
-        top:20%;
+        top:18%;
     }
     div.title h1{
         font-size: 20px;
@@ -46,7 +59,6 @@
 }
 
 .title {
-    border: 5px solid pink;
     position: absolute;
     display: flex;
     align-items: center;

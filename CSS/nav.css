@@ -6,7 +6,6 @@
 }
 
 nav {
-    border: 5px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +69,7 @@ nav a {
     left: 0px;
     margin: 0px;
     padding: 10px; 
+    z-index: 2;
 }
 
 .sticky-nav img{

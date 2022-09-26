@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./CSS/nav.css"/>
     <link rel="stylesheet" href="./CSS/header.css"/>
     <link rel="stylesheet" href="./CSS/01history.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,20 +64,83 @@
                 Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. 
                 Vivamus suscipit dignissim tortor nec congue. </p>
         </div>
-
-        <div class="thumbnail-slide">
-            
-
+<div class="thumbnails">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./img/thumbnail1.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/thumbnail 2.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/thumbnail1.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/thumbnail 2.jpg"
+            />
+          </div>
+      
+       
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
     </div>
 
+ 
 
 
-    <div class="section-02climb"></div>
+
 
 
 
 </section> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- INITIALIZE SWIPER -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
 </body>
 </html>

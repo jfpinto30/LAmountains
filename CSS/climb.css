@@ -1,8 +1,5 @@
 @media all and (min-width:680px) and (max-width:980px) {
-    section.section-climb {
-        max-height: 250px;
-        padding-top: 40%;
-    }
+ 
     div.title-climb {
         background-color: #ffffff;
         display: flex;
@@ -38,10 +35,7 @@
     }
 }
 @media all and (min-width:550px) and (max-width:680px) {
-    section.section-climb {
-        max-height: 450px;
-        padding-top: 50%;
-    }
+   
     div.title-climb {
         background-color: #ffffff;
         display: flex;
@@ -63,10 +57,7 @@
     
 }
 @media all and (min-width:310px) and (max-width:550px) {
-    section.section-climb {
-        max-height: 450px;
-        padding-top: 80%;
-    }
+ 
     div.title-climb {
         background-color: #ffffff;
         display: flex;
@@ -104,30 +95,36 @@
     }
 }
 .section-climb {
-    background-color: #ffffff;
+    border: 5px solid green;
+    background-color:rgb(53, 74, 105);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    top: 0px;
-    left: 0px;
+    overflow: hidden;
 }
 .section-climb img {
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 10px 0px 10px 0px;
 }
 
+.titleClimb-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 .title-climb{
+    border: 5px solid pink;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%; 
     height: 200px;
+    margin:5%;
 }
 
 .title-climb span {
@@ -164,7 +161,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   background-color:rgb(53, 74, 105);
-
 }
 
 .img-bar {

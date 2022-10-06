@@ -115,6 +115,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 
 .title-climb{
@@ -124,7 +125,8 @@
     justify-content: center;
     width: 50%; 
     height: 200px;
-    margin:5%;
+    margin:10%;
+    
 }
 
 .title-climb span {

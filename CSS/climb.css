@@ -20,18 +20,15 @@
         
     }
     div.text {
-        max-width: 50%;
-        max-height: 200px;
+        max-width: 30%;
+        max-height: 185px;
         
     }
-    div.text h2 {
-        font-size: 25px;
-        margin-top:5%;
-        padding: 0%;   
+    div.text h2{
+        font-size: 20px;
     }
-    div.text ul  {
+    div.text ul{
         font-size: 10px;
-        margin: 0%;
     }
 }
 @media all and (min-width:550px) and (max-width:680px) {
@@ -63,12 +60,13 @@
     }
     div.text {
         max-width: 40%;
-        max-height: 200px;
+        max-height: 165px;
+        
     }
     div.text h2{
-        font-size: 20px;
+        font-size: 15px;
     }
-    div.text li{
+    div.text ul{
         font-size: 10px;
     }
     
@@ -119,7 +117,6 @@
     }
 }
 .section-climb {
-    border: 5px solid green;
     background-color:rgb(53, 74, 105);
     display: flex;
     justify-content: center;
@@ -143,7 +140,6 @@
 }
 
 .title-climb{
-    border: 5px solid pink;
     display: flex;
     align-items: center;
     justify-content: center;
